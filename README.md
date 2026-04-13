@@ -1,32 +1,36 @@
 🏥 AI Healthcare Booking System
 
-A modern web-based healthcare booking system that allows patients to find doctors, book appointments, and check availability in real-time. This project is designed with a clean UI/UX and scalable backend to simplify healthcare access.
+A full-stack web application that enables patients to seamlessly book doctor appointments, check availability, and manage healthcare interactions. The system is designed with a modern UI/UX and scalable backend, making healthcare access simple, fast, and efficient.
 
-🚀 Features
-👨‍⚕️ Add and manage doctors
-📅 Book appointments easily
-⏰ Check doctor availability (date & time)
-🤖 AI-based symptom checker (optional feature)
-🔐 User authentication (Login/Register)
-📊 Admin dashboard for management
-📱 Responsive design (mobile + desktop)
+🚀 Overview
+
+The AI Healthcare Booking System helps bridge the gap between patients and healthcare providers by offering:
+
+Easy appointment scheduling
+Real-time doctor availability tracking
+User-friendly dashboard
+Optional AI-powered symptom assistance
+✨ Key Features
+👨‍⚕️ Doctor Management – Add, update, and manage doctor profiles
+📅 Appointment Booking – Book appointments with date & time selection
+⏱️ Availability Tracking – View real-time doctor schedules
+🔐 Authentication System – Secure login & registration
+📊 Admin Dashboard – Manage users, doctors, and bookings
+📱 Responsive Design – Works across mobile, tablet, and desktop
+🤖 AI Integration (Optional) – Basic symptom-based suggestions
 🛠️ Tech Stack
-Frontend
-React.js
-Tailwind CSS / Bootstrap
-Backend
-Node.js
-Express.js
-Database
-MongoDB (Mongoose)
-Other Tools
-Firebase (for authentication / notifications)
-REST APIs
+Category	Technology Used
+Frontend	React.js, Tailwind CSS
+Backend	Node.js, Express.js
+Database	MongoDB (Mongoose)
+Authentication	Firebase / JWT
+Tools	REST APIs, Git, Postman
 📂 Project Structure
 healthcare-booking/
 │── frontend/
 │   ├── components/
 │   ├── pages/
+│   ├── services/
 │   ├── App.js
 │   └── index.js
 │
@@ -34,9 +38,11 @@ healthcare-booking/
 │   ├── models/
 │   ├── routes/
 │   ├── controllers/
+│   ├── middleware/
 │   ├── config/
 │   └── server.js
 │
+│── screenshots/
 │── .env
 │── package.json
 │── README.md
@@ -51,42 +57,51 @@ npm install
 Backend
 cd backend
 npm install
-3️⃣ Environment Variables
+3️⃣ Configure Environment Variables
 
-Create a .env file in the backend folder and add:
+Create a .env file in the backend directory:
 
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-FIREBASE_KEY=your_firebase_key
+JWT_SECRET=your_jwt_secret
+FIREBASE_KEY=your_firebase_config
 4️⃣ Run the Application
-Start Backend
+Start Backend Server
 cd backend
-npm start
+npm run dev
 Start Frontend
 cd frontend
 npm start
-🌐 Usage
-Register/Login as a user
-Browse doctors
-Select date & time
-Book appointment
-View booking history
-📸 Screenshots (Optional)
-Home Page
-Doctor List
-Booking Page
-Dashboard
+
+🌐 Usage Guide
+Register or log in as a user
+Browse available doctors
+Select preferred date & time
+Book an appointment
+View and manage bookings
+
+
+👉[ https://your-deployed-link.com](https://prescripto.vercel.app/)
+
 🔮 Future Enhancements
-💬 Chat with doctor
-📹 Video consultation
-💳 Online payment integration
-🧠 Advanced AI diagnosis system
+💬 Real-time chat with doctors
+📹 Video consultation integration
+💳 Online payment gateway (Razorpay/Stripe)
+🧠 Advanced AI diagnosis & recommendations
+📍 Location-based doctor search
+🧪 Testing
+Unit testing for backend APIs
+API testing using Postman
+UI testing for user flows
 🤝 Contributing
 
 Contributions are welcome!
-Feel free to fork this repo and submit a pull request.
 
+Fork the repository
+Create a new branch (feature/your-feature)
+Commit changes
+Push to your branch
+Open a Pull Request
 📄 License
 
 This project is licensed under the MIT License.
@@ -95,4 +110,8 @@ This project is licensed under the MIT License.
 
 Jaya Kumari
 
-Passionate about AI & Web Development
+💡 AI & Web Development Enthusiast
+🚀 Passionate about building impactful solutions
+⭐ Support
+
+If you like this project, please ⭐ the repository and share it!
